@@ -51,7 +51,7 @@ const Header: React.FC<{}> = () => {
                   onClick={() => navigate(item.key)}
                   className={`${
                     theme.textClass + " " + theme.btnHeader
-                  } hover:opacity-75 text-white transition-opacity duration-300 flex items-center space-x-1 ${
+                  } hover:opacity-75 transition-opacity duration-300 flex items-center space-x-1 ${
                     location.pathname === item.key
                       ? "font-bold border-b-2 border-current"
                       : ""
@@ -68,7 +68,7 @@ const Header: React.FC<{}> = () => {
               <select
                 value={currentTheme}
                 onChange={handleThemeChange}
-                className={`${theme.dropDown} backdrop-blur-sm text-current border border-white/20 rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300`}
+                className={`${theme.dropDown} backdrop-blur-sm border border-white/20 rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300`}
               >
                 <option value="theme1">Minimalist</option>
                 <option value="theme2">Dark Pro</option>

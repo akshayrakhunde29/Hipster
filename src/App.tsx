@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import type { ReactNode } from "react";
 import {
   Routes,
@@ -37,7 +37,7 @@ export const themeConfig = {
     contentClass: "container mx-auto px-4 py-8",
     titleClass: "text-3xl font-light text-gray-800 mb-6",
     fontFamily: "font-sans",
-    btnHeader: "bg-transparent text-black/100",
+    btnHeader: "bg-transparent text-black",
     dropDown: "bg-grey/900 text-white",
   },
   theme2: {
@@ -71,7 +71,7 @@ export const themeConfig = {
     contentClass: "container mx-auto px-4 py-8",
     titleClass: "text-5xl font-bold text-white mb-8 text-center drop-shadow-lg",
     fontFamily: "font-mono",
-    btnHeader: "bg-transparent text-black/100",
+    btnHeader: "bg-transparent text-black",
     dropDown: "bg-gradient-to-br text-white",
   },
 };
