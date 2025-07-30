@@ -127,7 +127,6 @@ const App: React.FC = () => {
       <div className="transition-all duration-500 w-full">
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
