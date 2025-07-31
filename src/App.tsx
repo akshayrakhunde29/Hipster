@@ -28,12 +28,15 @@ export const themeConfig = {
       "bg-white rounded-lg shadow-sm border hover:shadow-md transition-shadow duration-300",
     buttonClass:
       "bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition-colors duration-300",
-    sidebarClass: "hidden",
-    contentClass: "container mx-auto px-4 py-8",
+    sidebarClass:
+      "bg-white fixed left-0 top-16 w-64 h-full bg-gray-800 shadow-xl z-10 transform transition-transform duration-300",
+    contentClass: "ml-0 md:ml-64 mx-auto px-4 py-8",
     titleClass: "text-3xl font-light text-gray-800 mb-6",
     fontFamily: "font-sans",
     btnHeader: "bg-transparent text-black",
     dropDown: "bg-grey/900 text-white",
+    sideBar: "text-gray-700 bg-gray-100 hover:bg-gray-300 hover:text-black",
+    sideBarActive: "bg-blue-600 text-white",
   },
   theme2: {
     name: "Dark Pro",
@@ -51,6 +54,8 @@ export const themeConfig = {
     fontFamily: "font-serif",
     btnHeader: "bg-transparent text-white",
     dropDown: "bg-white text-black/100",
+    sideBar: "text-gray-300 hover:bg-gray-700 hover:text-white",
+    sideBarActive: "bg-purple-600 text-white",
   },
   theme3: {
     name: "Colorful Fun",
@@ -62,12 +67,15 @@ export const themeConfig = {
       "bg-white rounded-3xl shadow-2xl border-4 border-yellow-300 hover:shadow-3xl hover:transform hover:scale-105 transition-all duration-500 hover:rotate-1",
     buttonClass:
       "bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-110 shadow-lg",
-    sidebarClass: "hidden",
-    contentClass: "container mx-auto px-4 py-8",
+    sidebarClass:
+      "g-gradient-to-r from-yellow-400 to-orange-500 fixed left-0 top-16 w-64 h-full shadow-xl z-10 transform transition-transform duration-300",
+    contentClass: "ml-0 md:ml-64 mx-auto px-4 py-8",
     titleClass: "text-5xl font-bold text-white mb-8 text-center drop-shadow-lg",
     fontFamily: "font-mono",
     btnHeader: "bg-transparent text-black",
     dropDown: "bg-gradient-to-br text-white",
+    sideBar: "text-gray-300  hover:bg-gray-700 hover:text-white",
+    sideBarActive: "bg-gradient-to-r from-green-400 to-blue-500 text-white",
   },
 };
 

@@ -44,7 +44,7 @@ const Header: React.FC<{}> = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-6">
+            {/* <nav className="hidden md:flex items-center space-x-6">
               {navigationItems.map((item) => (
                 <button
                   key={item.key}
@@ -61,7 +61,7 @@ const Header: React.FC<{}> = () => {
                   <span>{item.label}</span>
                 </button>
               ))}
-            </nav>
+            </nav> */}
 
             {/* Theme Selector */}
             <div className="flex items-center space-x-4">
@@ -125,31 +125,29 @@ const Header: React.FC<{}> = () => {
       </header>
 
       {/* Sidebar for Theme 2 */}
-      {currentTheme === "theme2" && (
-        <aside className={`${theme.sidebarClass} hidden md:block`}>
-          <div className="p-6">
-            <h3 className="text-purple-400 font-bold text-lg mb-4">
-              Navigation
-            </h3>
-            <nav className="space-y-2">
-              {navigationItems.map((item) => (
-                <button
-                  key={item.key}
-                  onClick={() => navigate(item.key)}
-                  className={`w-full text-left p-3 rounded-lg transition-all duration-300 flex items-center space-x-3 ${
-                    location.pathname === item.key
-                      ? "bg-purple-600 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                  }`}
-                >
-                  <span className="text-xl">{item.icon}</span>
-                  <span>{item.label}</span>
-                </button>
-              ))}
-            </nav>
-          </div>
-        </aside>
-      )}
+      {/* {currentTheme === "theme2" && ( */}
+      <aside className={`${theme.sidebarClass} hidden md:block`}>
+        <div className="p-6">
+          {/* <h3 className="text-purple-400 font-bold text-lg mb-4">Navigation</h3> */}
+          <nav className="space-y-2">
+            {navigationItems.map((item) => (
+              <button
+                key={item.key}
+                onClick={() => navigate(item.key)}
+                className={`w-full text-left p-3 rounded-lg transition-all duration-300 flex items-center space-x-3 ${
+                  location.pathname === item.key
+                    ? `${theme.sideBarActive}`
+                    : `${theme.sideBar}`
+                }`}
+              >
+                <span className="text-xl">{item.icon}</span>
+                <span>{item.label}</span>
+              </button>
+            ))}
+          </nav>
+        </div>
+      </aside>
+      {/* )} */}
     </>
   );
 };
