@@ -1,11 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import type { ReactNode } from "react";
-import {
-  Routes,
-  Route,
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
@@ -115,11 +110,12 @@ const ThemeContextProvider: React.FC<{ children: ReactNode }> = ({
 
 // Main App Component
 const App: React.FC = () => {
-  const navitage = useNavigate();
+  const navigate = useNavigate();
   const location = useLocation();
+
   useEffect(() => {
     if (location.pathname === "/") {
-      navitage("/home");
+      navigate("/home");
     }
   }, [location]);
   return (
